@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/editableArea_backround"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray">
+
+        <!-- Example boxes -->
+
+        <LinearLayout
+            android:id="@+id/box1"
+            android:layout_width="373dp"
+            android:layout_height="342dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/white_background"
+            android:orientation="vertical"
+            android:tag="box1"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="121dp">
+
+            <TextView
+                android:id="@+id/messageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:gravity="top"
+                android:maxLines="15"
+                android:paddingBottom="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/box2"
+            android:layout_width="189dp"
+            android:layout_height="91dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/weather_background"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:tag="box2"
+            tools:layout_editor_absoluteX="151dp"
+            tools:layout_editor_absoluteY="3dp">
+
+            <TextView
+                android:id="@+id/cityTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/weatherTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/box3"
+            android:layout_width="312dp"
+            android:layout_height="472dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/_ijyaocqyvzesqopimepchwkuwi"
+            android:tag="box3"
+            tools:layout_editor_absoluteX="450dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <LinearLayout
+            android:id="@+id/box4"
+            android:layout_width="171dp"
+            android:layout_height="55dp"
+            android:layout_margin="16dp"
+            android:background="@color/material_on_background_disabled"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:tag="box4"
+            tools:layout_editor_absoluteX="788dp"
+            tools:layout_editor_absoluteY="3dp">
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="dd/mm/yyyy"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="00:00"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/box5"
+            android:layout_width="172dp"
+            android:layout_height="161dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/commertial"
+            android:tag="box5"
+            tools:layout_editor_absoluteX="787dp"
+            tools:layout_editor_absoluteY="318dp" />
+
+        <View
+            android:id="@+id/box6"
+            android:layout_width="960dp"
+            android:layout_height="63dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/screenshot_2024_07_03_181734"
+            android:tag="box6"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="479dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

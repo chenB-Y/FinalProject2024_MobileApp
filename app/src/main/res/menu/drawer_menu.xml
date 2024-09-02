@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@android:drawable/ic_menu_view" />
+
+
+    <item
+    android:id="@+id/nav_MessageBoard"
+    android:title="MessageBoard"
+    android:icon="@android:drawable/ic_menu_edit" />
+    <item
+        android:id="@+id/nav_imageBoard"
+        android:title="ImageBoard"
+        android:icon="@android:drawable/ic_menu_edit" />
+
+    <item
+        android:id="@+id/ApiChoice"
+        android:title="Api Choice"
+        android:icon="@android:drawable/ic_menu_add" />
+
+    <item
+        android:id="@+id/EditProfile"
+        android:title="Edit Profile"
+        android:icon="@android:drawable/ic_menu_add" />
+    <item
+        android:id="@+id/logoutFromTV"
+        android:title="Logout From TV"
+        android:icon="@android:drawable/ic_lock_power_off" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@android:drawable/ic_lock_power_off" />
+
+</menu>
+

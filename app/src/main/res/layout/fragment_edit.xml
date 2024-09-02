@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditFragment">
+
+
+    <!-- Container for buttons -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/editableArea_backround"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray">
+
+
+        <!-- Change this View to FrameLayout -->
+
+
+
+        <LinearLayout
+            android:id="@+id/box1"
+            android:layout_width="161dp"
+            android:layout_height="176dp"
+            android:background="@drawable/white_background"
+            android:orientation="vertical"
+            android:tag="box1"
+            tools:layout_editor_absoluteX="604dp"
+            tools:layout_editor_absoluteY="97dp">
+
+            <TextView
+                android:id="@+id/messageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="5"
+                android:paddingBottom="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/box2"
+            android:layout_width="202dp"
+            android:layout_height="104dp"
+            android:background="@drawable/weather_background"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:tag="box2"
+            tools:layout_editor_absoluteX="209dp"
+            tools:layout_editor_absoluteY="73dp">
+
+            <TextView
+                android:id="@+id/cityTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/weatherTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/box3"
+            android:layout_width="113dp"
+            android:layout_height="149dp"
+            android:background="@drawable/_ijyaocqyvzesqopimepchwkuwi"
+            android:tag="box3"
+            tools:layout_editor_absoluteX="440dp"
+            tools:layout_editor_absoluteY="107dp" />
+
+        <LinearLayout
+            android:id="@+id/box4"
+            android:layout_width="177dp"
+            android:layout_height="56dp"
+            android:background="@color/material_on_background_disabled"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:tag="box4"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="dd/mm/yyyy"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="00:00"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/box5"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="#355CEA"
+            android:tag="box5"
+            tools:layout_editor_absoluteX="578dp"
+            tools:layout_editor_absoluteY="21dp">
+
+            <!-- Add the TextView inside FrameLayout -->
+            <TextView
+                android:id="@+id/stockDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Stock Data"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/box6"
+            android:layout_width="865dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/holo_red_light"
+            android:tag="box6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.example.myapplication.JokeBoxView
+            android:id="@+id/box7"
+            android:layout_width="195dp"
+            android:layout_height="31dp"
+            android:background="@drawable/commertial"
+            android:tag="box7"
+            tools:layout_editor_absoluteX="238dp"
+            tools:layout_editor_absoluteY="242dp" />
+
+        <com.example.myapplication.JokeBoxView
+            android:id="@+id/box8"
+            android:layout_width="141dp"
+            android:layout_height="79dp"
+            android:background="@android:drawable/spinner_dropdown_background"
+            android:tag="box8"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="141dp" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Save"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/backround_color_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Pick Background Color" />
+
+        <Button
+            android:id="@+id/randomizeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Randomize Layout With AI " />
+    </LinearLayout>
+
+</LinearLayout>

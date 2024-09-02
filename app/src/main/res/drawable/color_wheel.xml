@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color wheel background -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:angle="0"
+                android:startColor="#FF0000"
+                android:centerColor="#00FF00"
+                android:endColor="#0000FF"
+                android:type="sweep"/>
+        </shape>
+    </item>
+</layer-list>

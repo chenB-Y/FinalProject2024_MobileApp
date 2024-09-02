@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#FF6200EE</color>
+    <color name="colorSecondary">#FF018786</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="holo_red_light">#F44336</color>
+    <color name="holo_blue_light">#2196F3</color>
+    <color name="holo_green_light">#4CAF50</color>
+    <color name="holo_orange_light">#FF5722</color>
+    <color name="holo_purple">#9C27B0</color>
+    <color name="primary">#6200EE</color>
+    <color name="secondaryText">#757575</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="purple">#800080</color>
+    <color name="colorPrimaryVariant">#3700B3</color> <!-- Darker Deep Purple -->
+
+    <!-- Secondary color -->
+    <color name="colorSecondaryVariant">#018786</color> <!-- Darker Teal -->
+
+    <!-- On colors -->
+    <color name="colorOnPrimary">#FFFFFF</color> <!-- White -->
+    <color name="colorOnSecondary">#000000</color> <!-- Black -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- Darker Deep Purple -->
+
+</resources>
